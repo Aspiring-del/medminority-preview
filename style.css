@@ -357,6 +357,14 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     padding: 60px 8%;
+    align-items: start;
+    justify-items: center;
+    text-align: center;
+}
+
+.footer-content > div {
+    width: 100%;
+    text-align: center;
 }
 
 .footer-content h3, .footer-content h4{
@@ -364,8 +372,15 @@ footer {
     margin: 15px;
 }
 
+.footer-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 .footer-content ul li {
-    margin-bottomm: 10px;
+    margin-bottom: 10px;
 }
 
 .footer-content a {
