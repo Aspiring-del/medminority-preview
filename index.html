@@ -46,6 +46,40 @@
             </div>
         </section>
 
+        <section class="search">
+            <h1>Search the Directory</h1>
+
+            <form action="#" method="post" class="filter-bar">
+                <div>
+                    <input type="text" name="name" placeholder="Dr....">
+                </div>
+
+                <div>
+                    <input type="text" name="location" placeholder="City or Zip" required>
+                </div>
+
+                <div>
+                    <select name="specialty">
+                        <option selected disabled>Specialty</option>
+                        <option value="obgyn">OB-GYN</option>
+                        <option value="pediatrician">Pediatrician</option>
+                        <option value="family">Family Medicine</option>
+                        <option value="dermatology">Dermatology</option>
+                        <option value="mentalhealth">Mental Health</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="text" name="insurance" placeholder="Insurance (optional)">
+                </div>
+
+                <button type="submit" class="search-submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search
+                </button>
+            </form>
+        </section>
+
         <!--Why Representation Matters-->
         <section class="representation">
             <div class="representation-image">
