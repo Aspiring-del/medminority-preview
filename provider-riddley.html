@@ -1,82 +1,107 @@
 <!doctype html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Test physician profile layout for MedMinority.">
-        <meta name="author" content="Niya Barry">
-    
-        <title>Diana Riddley, MD | MedMinority</title>
-    
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    
-    <body>
-        <div class="physician-profile">
-            <a href="index.html" class="profile-back-link">
-                ← Back to Featured Physicians
-            </a>
-    
-            <div class="profile-top">
-                <div
-                    class="physician-photo"
-                    aria-label="Physician profile photo placeholder"
-                ></div>
-    
-                <div class="profile-heading">
-                    <p><strong>Test profile — not yet verified or published</strong></p>
-                    <h1>Diana Riddley, MD</h1>
-                    <p class="profile-specialty">Family Medicine</p>
-                    <p>FirstHealth</p>
-                    <p>Raeford, North Carolina</p>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diana Riddley, MD, Family Medicine, Raeford, North Carolina.">
+    <meta name="author" content="Niya Barry">
+    <title>Diana Riddley, MD | MedMinority</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="profile-page">
+    <header>
+        <nav class="navbar">
+            <div>
+                <a href="index.html">
+                    <img src="medminority-images/medminority-logo-2.png" alt="MedMinority Logo" class="logo">
+                </a>
             </div>
-    
-            <div class="profile-sections">
-                <div class="profile-section">
-                    <h2>Provider Information</h2>
-                    <p>
-                        Additional professional information can be added here
-                        after the physician submits or approves the profile.
-                    </p>
-                </div>
-    
-                <div class="profile-section">
-                    <h2>Contact</h2>
-    
-                    <p>
-                        <strong>Practice phone:</strong>
-                        <span class="profile-value"></span>
-                    </p>
-    
-                    <p>
-                        <strong>Practice address:</strong>
-                        <span class="profile-value"></span>
-                    </p>
-                </div>
-    
-                <div class="profile-section">
-                    <h2>Official Provider Information</h2>
-    
-                    <p>
-                        Visit FirstHealth’s provider directory for current
-                        professional, practice and contact information.
-                    </p>
-    
-                    <a
-                        href="https://www.firsthealth.org/find-a-provider/"
-                        class="btn"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Visit FirstHealth Directory
-                    </a>
-                </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html">How to Help</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="find.html" class="btn">Directory</a>
+        </nav>
+    </header>
+
+    <main class="physician-profile">
+        <a href="index.html" class="profile-back-link">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Featured Physicians
+        </a>
+
+        <section class="profile-top">
+            <div class="physician-photo" aria-label="Default physician profile image">
+                <i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
+            </div>
+
+            <div class="profile-heading">
+                <h1>Diana Riddley, MD</h1>
+                <p class="profile-specialty">Family Medicine</p>
+                <p>FirstHealth Primary Care</p>
+                <p><i class="fa-solid fa-location-dot"></i> Raeford, North Carolina</p>
+            </div>
+        </section>
+
+        <div class="profile-sections">
+            <section class="profile-section">
+                <h2>Provider Information</h2>
+                <p>Dr. Riddley is publicly listed as a Family Medicine physician with FirstHealth Primary Care in Raeford.</p>
+            </section>
+
+            <section class="profile-section">
+                <h2>Practice Contact</h2>
+                <p>
+                    <strong>Phone:</strong>
+                    <a href="tel:9108786700">(910) 878-6700</a>
+                </p>
+                <address>
+                    <strong>Address:</strong><br>
+                    6322 Fayetteville Road<br>Raeford, NC 28376
+                </address>
+            </section>
+
+            <section class="profile-section">
+                <h2>Official Information</h2>
+                <p>
+                    Confirm current availability, services and contact details through the official practice directory.
+                </p>
+                <a href="https://www.firsthealth.org/find-a-provider/" class="btn" target="_blank" rel="noopener noreferrer">
+                    Visit FirstHealth Provider Directory
+                </a>
+                <p class="profile-note">
+                    MedMinority is an independent directory and does not provide medical advice or guarantee provider availability.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <img src="medminority-images/medminority-logo-2.png" alt="MedMinority Logo" style="height:300px;width:300px;">
+                <p>Connecting communities with minority healthcare professionals</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="help.html">How to Help</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
         </div>
-    
-        <script src="script.js"></script>
-    </body>
+        <div class="copyright">
+            &copy;2026 MedMinority | All Rights Reserved | Developed by Niya Barry
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
