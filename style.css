@@ -1615,3 +1615,22 @@ footer {
         padding: 24px 20px;
     }
 }
+
+.high-school-links {
+    margin: 18px 0 0 20px;
+    text-align: left;
+    list-style: disc;
+}
+
+.high-school-links li {
+    margin-bottom: 9px;
+}
+
+.high-school-links a {
+    color: #0b6efd;
+    font-weight: 500;
+}
+
+.high-school-links a:hover {
+    text-decoration: underline;
+}
