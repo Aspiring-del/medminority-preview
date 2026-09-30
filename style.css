@@ -1616,21 +1616,21 @@ footer {
     }
 }
 
-.high-school-links {
+.resource-links {
     margin: 18px 0 0 20px;
     text-align: left;
     list-style: disc;
 }
 
-.high-school-links li {
+.resource-links li {
     margin-bottom: 9px;
 }
 
-.high-school-links a {
+.resource-links a {
     color: #0b6efd;
     font-weight: 500;
 }
 
-.high-school-links a:hover {
+.resource-links a:hover {
     text-decoration: underline;
 }
