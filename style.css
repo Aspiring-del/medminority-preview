@@ -1165,6 +1165,15 @@ footer {
     color:#666;
 }
 
+.contact-email-alternative a{
+    color:#0b6efd;
+    font-weight:600;
+}
+
+.contact-email-alternative a:hover{
+    text-decoration:underline;
+}
+
 /* FORM */
 
 .contact-form{
