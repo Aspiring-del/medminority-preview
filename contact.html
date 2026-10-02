@@ -9,7 +9,60 @@
     <header><nav class="navbar"><div><a href="index.html"><img src="medminority-images/medminority-logo-2.png" alt="MedMinority Logo" class="logo"></a></div><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="help.html">How to Help</a></li><li><a href="resources.html">Resources</a></li><li><a href="contact.html" class="active">Contact</a></li></ul><a href="find.html" class="btn">Find a Doctor</a></nav></header>
     <main>
         <section class="page-hero contact-hero"><div class="page-hero-overlay"></div><div class="page-hero-content"><h1>Contact MedMinority</h1><p>Questions about the directory, provider participation or organizational outreach are welcome.</p></div></section>
-        <section class="contact-intro"><div class="section-title"><span class="section-label">Contact</span><h2>Get in Touch</h2><p>Email is the official contact method for this student-led project.</p><p><a href="mailto:medminority@gmail.com" class="btn">medminority@gmail.com</a></p></div></section>
+        <section class="contact-intro">
+            <div class="section-title">
+                <span class="section-label">Contact</span>
+                <h2>Get in Touch</h2>
+                <p>Contact MedMinority with a question, concern, correction request, partnership idea or interest in volunteering.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-form-container" style="max-width:900px;margin:0 auto;">
+                <span class="section-label">Send a Message</span>
+                <h2>How Can We Help?</h2>
+                <p>Complete the form below to prepare an email to MedMinority.</p>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Name</label>
+                            <input type="text" id="contactName" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" name="email" placeholder="Your email address" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactReason">Reason for Contacting</label>
+                        <select id="contactReason" name="reason" required>
+                            <option value="">Select a reason</option>
+                            <option value="General Question">General Question</option>
+                            <option value="Profile Correction or Removal">Profile Correction or Removal</option>
+                            <option value="Partnership">Partnership</option>
+                            <option value="Volunteering">Volunteering</option>
+                            <option value="Website Concern">Website Concern</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" name="message" rows="7" placeholder="How can we help?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn contact-submit-btn">
+                        Continue in Email
+                        <i class="fas fa-envelope"></i>
+                    </button>
+                </form>
+
+                <p class="contact-email-alternative">You can also email <a href="mailto:medminority@gmail.com">medminority@gmail.com</a> directly.</p>
+            </div>
+        </section>
         <section class="cta"><h2>Provider Participation</h2><p>Physicians who want to be considered for the directory should use the voluntary provider opt-in form.</p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfSLdoAgovO8rUOqk4jmJVDaJ7Mne_3wZfpy1gq4QQiPlHNcg/viewform" target="_blank" rel="noopener noreferrer" class="btn">Provider Opt-In Form</a></section>
     </main>
     <footer><div class="footer-content"><div><img src="medminority-images/medminority-logo-2.png" alt="MedMinority Logo" style="height:300px;width:300px;"><p>Connecting communities with minority healthcare professionals.</p></div><div><h4>Quick Links</h4><ul><li><a href="about.html">About</a></li><li><a href="help.html">How to Help</a></li><li><a href="resources.html">Resources</a></li></ul></div></div><div class="copyright">&copy;2026 MedMinority | All Rights Reserved | Developed by Niya Barry</div></footer>
