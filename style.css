@@ -399,6 +399,25 @@ footer {
     color: #fff;
 }
 
+.footer-instagram {
+    width: 44px;
+    height: 44px;
+    margin-top: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,.35);
+    border-radius: 50%;
+    font-size: 23px;
+    transition: .3s ease;
+}
+
+.footer-instagram:hover {
+    background: #0b6efd;
+    border-color: #0b6efd;
+    transform: translateY(-3px);
+}
+
 
 .socials i {
     font-size: 24px;
