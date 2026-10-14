@@ -501,6 +501,10 @@ footer {
     align-items: center;
 }
 
+.help-options .mission-card p {
+    margin-bottom: 20px;
+}
+
 .help-card-action {
     margin-top: auto;
 }
