@@ -34,3 +34,6 @@ Finding a healthcare provider who understands your cultural background, language
 ├── contact.html          # Contact form & general inquiry
 ├── style.css             # Main stylesheet
 └── medminority-images/   # Project image assets & media
+```
+
+<!-- Pages rebuild trigger -->
