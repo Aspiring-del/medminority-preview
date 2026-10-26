@@ -193,6 +193,60 @@ function displayDoctors(list) {
 }
 
 function searchDoctors() {
+
+
+    const name = document.getElementById("searchName")
+    .value.trim().toLowerCase();
+
+    const specialty = document.getElementById("specialty").value;
+    const city = document.getElementById("city").value;
+    const ethnicity = document.getElementById("ethnicity").value;
+
+    const results = doctors.filter(doctor => {
+        const matchesName = doctor.name.toLowerCase().includes(name);
+        const matchesSpecialty = !specialty || doctor.specialty === specialty;
+        const matchesCity = !city || doctor.city === city;
+        const matchesEthnicity = !ethnicity || doctor.ethnicity === ethnicity;
+
+        return matchesName && 
+               matchesSpecialty &&
+               matchesCity &&
+               matchesEthnicity;
+            
+    });
+
+    displayDoctors(results);
     
 }
+
+// Search Button 
+searchForm.addEventListener(submit, function(event)){
+    event.preventDefault();
+    searchDoctors();
+});
+
+//Filter immediately when a dropdown changes
+
+["specialty", "city", "ethnicity"].forEach(id => {
+    document.getElementById
+    .addEventListener("change", searchDoctors);
+});
+
+//Live name search
+
+document.getElementById("searchName")
+.addEventListener("input", searchDoctors);
+
+//Reset Filters
+
+document.getElementById("resetSearch")
+.addEventListener("click", function() {
+    searchForm.reset();
+    displayDoctors(doctors);
+});
+
+//Display all doctors page loads
+
+displayDoctors(doctors);
+
 
