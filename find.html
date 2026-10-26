@@ -97,6 +97,75 @@
             </div>
         </section>
 
+        <section class="featured-doctors">
+        
+            <h2>Doctor Directory</h2>
+        
+            <p id="resultCount" role="status" aria-live="polite"></p>
+        
+            <div class="doctor-grid" id="doctorGrid">
+                <!-- JavaScript generates doctor cards here -->
+            </div>
+        
+            <p id="noResults" style="display:none;">
+                No doctors match your search.
+                Try changing your filters.
+            </p>
+        
+        </section>
+
+        <section class="doctor-search">
+
+            <h2>Find a Doctor</h2>
+        
+            <p>Search by name, specialty, city or ethnicity.</p>
+        
+            <form class="search-box" id="doctorSearchForm">
+        
+                <input
+                    type="search"
+                    id="searchName"
+                    placeholder="Search doctor's name"
+                    aria-label="Doctor's name"
+                >
+        
+                <select id="specialty">
+                    <option value="">All Specialties</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Pediatrics">Pediatrics</option>
+                    <option value="Neurology">Neurology</option>
+                    <option value="Family Medicine">Family Medicine</option>
+                    <option value="Dermatology">Dermatology</option>
+                </select>
+        
+                <select id="city">
+                    <option value="">All Cities</option>
+                    <option value="Charlotte">Charlotte</option>
+                    <option value="Raleigh">Raleigh</option>
+                    <option value="Durham">Durham</option>
+                    <option value="Greensboro">Greensboro</option>
+                </select>
+        
+                <select id="ethnicity">
+                    <option value="">All Ethnicities</option>
+                    <option value="Black">Black</option>
+                    <option value="East Asian">East Asian</option>
+                    <option value="South Asian">South Asian</option>
+                    <option value="Hispanic">Hispanic</option>
+                </select>
+        
+                <button type="submit">
+                    <i class="fas fa-search"></i> Search
+                </button>
+        
+                <button type="button" id="resetSearch">
+                    Reset
+                </button>
+        
+            </form>
+        
+        </section>
+
         <section class="mission-vision">
             <div class="mission-card">
                 <i class="fas fa-stethoscope"></i>
