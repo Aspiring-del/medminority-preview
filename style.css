@@ -561,6 +561,10 @@ footer {
     gap: 16px;
 }
 
+.doctor-filter-bar {
+    grid-template-columns: repeat(6, 1fr);
+}
+
 .filter-bar div {
     width: 100%;
 }
