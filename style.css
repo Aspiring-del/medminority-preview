@@ -188,9 +188,9 @@ header {
 
 .doctor-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 360px));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 300px));
     justify-content: center;
-    gap: 30px;
+    gap: 24px;
     max-width: 1200px;
     margin: 30px auto 0;
 }
@@ -1728,4 +1728,17 @@ footer {
 .directory-results #noResults {
     margin-top: 25px;
     color: #5f666b;
+}
+
+.directory-results .doctor-photo-placeholder {
+    height: 210px;
+    font-size: 72px;
+}
+
+.directory-results .doctor-card-content {
+    padding: 20px 18px 22px;
+}
+
+.directory-results .doctor-card h3 {
+    font-size: 1.05rem;
 }
