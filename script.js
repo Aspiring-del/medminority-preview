@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
             specialty: "Vascular Surgery",
             city: "Pinehurst",
             ethnicity: "",
-            practice: "Pinehurst Surgical Clinic"
+            practice: "Pinehurst Surgical Clinic",
+            profile: "provider-adamolekun.html"
         },
         {
             id: 2,
@@ -20,7 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
             specialty: "Infectious Disease",
             city: "Pinehurst",
             ethnicity: "",
-            practice: "FirstHealth"
+            practice: "FirstHealth",
+            profile: "provider-biritwum.html"
         },
         {
             id: 3,
@@ -28,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
             specialty: "Family Medicine",
             city: "Raeford",
             ethnicity: "",
-            practice: "FirstHealth Primary Care"
+            practice: "FirstHealth Primary Care",
+            profile: "provider-riddley.html"
         },
         {
             id: 4,
@@ -36,7 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
             specialty: "Pediatrics",
             city: "Greenville",
             ethnicity: "",
-            practice: "ECU Health"
+            practice: "ECU Health",
+            profile: "provider-aikman.html"
         },
         {
             id: 5,
@@ -44,7 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
             specialty: "Neonatal-Perinatal Medicine / Pediatrics",
             city: "Greenville",
             ethnicity: "",
-            practice: "ECU Health"
+            practice: "ECU Health",
+            profile: "provider-akpan.html"
         },
         {
             id: 6,
@@ -52,7 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
             specialty: "Pulmonary Disease / Sleep Medicine",
             city: "Roanoke Rapids",
             ethnicity: "",
-            practice: "ECU Health"
+            practice: "ECU Health",
+            profile: "provider-alexis.html"
         },
         {
             id: 7,
@@ -60,7 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
             specialty: "Transplant Surgery / General Surgery",
             city: "Greenville",
             ethnicity: "",
-            practice: "ECU Health"
+            practice: "ECU Health",
+            profile: "provider-anderson.html"
         },
         {
             id: 8,
@@ -68,7 +75,8 @@ document.addEventListener("DOMContentLoaded", function () {
             specialty: "Emergency Medicine",
             city: "Greenville",
             ethnicity: "",
-            practice: "ECU Health"
+            practice: "ECU Health",
+            profile: "provider-asagbra.html"
         },
         {
             id: 9,
@@ -76,7 +84,8 @@ document.addEventListener("DOMContentLoaded", function () {
             specialty: "Obstetrics & Gynecology",
             city: "Greenville",
             ethnicity: "",
-            practice: "ECU Health"
+            practice: "ECU Health",
+            profile: "provider-atkinson.html"
         },
         {
             id: 10,
@@ -84,7 +93,8 @@ document.addEventListener("DOMContentLoaded", function () {
             specialty: "Internal Medicine",
             city: "Ahoskie",
             ethnicity: "",
-            practice: "ECU Health"
+            practice: "ECU Health",
+            profile: "provider-ayako.html"
         },
         {
             id: 11,
@@ -92,7 +102,8 @@ document.addEventListener("DOMContentLoaded", function () {
             specialty: "Pediatric Nephrology / Pediatrics",
             city: "Greenville",
             ethnicity: "",
-            practice: "ECU Health"
+            practice: "ECU Health",
+            profile: "provider-beng-ongey.html"
         },
         {
             id: 12,
@@ -100,7 +111,8 @@ document.addEventListener("DOMContentLoaded", function () {
             specialty: "Maternal & Fetal Medicine / Obstetrics & Gynecology",
             city: "Greenville",
             ethnicity: "",
-            practice: "ECU Health"
+            practice: "ECU Health",
+            profile: "provider-booker.html"
         },
         {
             id: 13,
@@ -108,7 +120,8 @@ document.addEventListener("DOMContentLoaded", function () {
             specialty: "Hospice and Palliative Medicine / Hospitalist",
             city: "Pinehurst",
             ethnicity: "",
-            practice: "FirstHealth"
+            practice: "FirstHealth",
+            profile: "provider-guillory-johnson.html"
         },
         {
             id: 14,
@@ -116,7 +129,8 @@ document.addEventListener("DOMContentLoaded", function () {
             specialty: "Hospitalist / Internal Medicine",
             city: "Pinehurst",
             ethnicity: "",
-            practice: "FirstHealth"
+            practice: "FirstHealth",
+            profile: "provider-ofosu.html"
         },
         {
             id: 15,
@@ -124,7 +138,8 @@ document.addEventListener("DOMContentLoaded", function () {
             specialty: "Family Medicine",
             city: "Fayetteville",
             ethnicity: "",
-            practice: "FirstHealth"
+            practice: "FirstHealth",
+            profile: "provider-ray.html"
         }
     ];
 
@@ -146,8 +161,10 @@ document.addEventListener("DOMContentLoaded", function () {
             list.length === 0 ? "block" : "none";
 
         list.forEach(doctor => {
-            const card = document.createElement("div");
+            const card = document.createElement("a");
             card.className = "doctor-card";
+            card.href = doctor.profile;
+            card.setAttribute("aria-label", `View profile for ${doctor.name}`);
 
             const photoPlaceholder = document.createElement("div");
             photoPlaceholder.className = "doctor-photo-placeholder";
