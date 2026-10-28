@@ -97,23 +97,6 @@
             </div>
         </section>
 
-        <section class="featured-doctors">
-        
-            <h2>Doctor Directory</h2>
-        
-            <p id="resultCount" role="status" aria-live="polite"></p>
-        
-            <div class="doctor-grid" id="doctorGrid">
-                <!-- JavaScript generates doctor cards here -->
-            </div>
-        
-            <p id="noResults" style="display:none;">
-                No doctors match your search.
-                Try changing your filters.
-            </p>
-        
-        </section>
-
         <section class="search doctor-search">
 
             <h1>Find a Doctor</h1>
@@ -131,27 +114,34 @@
         
                 <select id="specialty">
                     <option value="">All Specialties</option>
-                    <option value="Cardiology">Cardiology</option>
-                    <option value="Pediatrics">Pediatrics</option>
-                    <option value="Neurology">Neurology</option>
+                    <option value="Vascular Surgery">Vascular Surgery</option>
+                    <option value="Infectious Disease">Infectious Disease</option>
                     <option value="Family Medicine">Family Medicine</option>
-                    <option value="Dermatology">Dermatology</option>
+                    <option value="Pediatrics">Pediatrics</option>
+                    <option value="Neonatal-Perinatal Medicine / Pediatrics">Neonatal-Perinatal Medicine / Pediatrics</option>
+                    <option value="Pulmonary Disease / Sleep Medicine">Pulmonary Disease / Sleep Medicine</option>
+                    <option value="Transplant Surgery / General Surgery">Transplant Surgery / General Surgery</option>
+                    <option value="Emergency Medicine">Emergency Medicine</option>
+                    <option value="Obstetrics & Gynecology">Obstetrics & Gynecology</option>
+                    <option value="Internal Medicine">Internal Medicine</option>
+                    <option value="Pediatric Nephrology / Pediatrics">Pediatric Nephrology / Pediatrics</option>
+                    <option value="Maternal & Fetal Medicine / Obstetrics & Gynecology">Maternal & Fetal Medicine / Obstetrics & Gynecology</option>
+                    <option value="Hospice and Palliative Medicine / Hospitalist">Hospice and Palliative Medicine / Hospitalist</option>
+                    <option value="Hospitalist / Internal Medicine">Hospitalist / Internal Medicine</option>
                 </select>
         
                 <select id="city">
                     <option value="">All Cities</option>
-                    <option value="Charlotte">Charlotte</option>
-                    <option value="Raleigh">Raleigh</option>
-                    <option value="Durham">Durham</option>
-                    <option value="Greensboro">Greensboro</option>
+                    <option value="Ahoskie">Ahoskie</option>
+                    <option value="Fayetteville">Fayetteville</option>
+                    <option value="Greenville">Greenville</option>
+                    <option value="Pinehurst">Pinehurst</option>
+                    <option value="Raeford">Raeford</option>
+                    <option value="Roanoke Rapids">Roanoke Rapids</option>
                 </select>
         
                 <select id="ethnicity">
                     <option value="">All Ethnicities</option>
-                    <option value="Black">Black</option>
-                    <option value="East Asian">East Asian</option>
-                    <option value="South Asian">South Asian</option>
-                    <option value="Hispanic">Hispanic</option>
                 </select>
         
                 <button type="submit">
@@ -163,6 +153,23 @@
                 </button>
         
             </form>
+        
+        </section>
+
+        <section class="featured-doctors">
+        
+            <h2>Doctor Directory</h2>
+        
+            <p id="resultCount" role="status" aria-live="polite"></p>
+        
+            <div class="doctor-grid" id="doctorGrid">
+                <!-- JavaScript generates doctor cards here -->
+            </div>
+        
+            <p id="noResults" style="display:none;">
+                No doctors match your search.
+                Try changing your filters.
+            </p>
         
         </section>
 
