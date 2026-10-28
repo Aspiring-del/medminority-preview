@@ -188,8 +188,11 @@ header {
 
 .doctor-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 360px));
+    justify-content: center;
     gap: 30px;
+    max-width: 1200px;
+    margin: 30px auto 0;
 }
 
 .doctor-card {
@@ -1702,4 +1705,27 @@ footer {
     .doctor-filter-bar {
         grid-template-columns: 1fr;
     }
+}
+
+/* Directory results */
+.directory-results {
+    text-align: center;
+}
+
+.directory-results h2 {
+    margin-bottom: 10px;
+    color: #1f3243;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.directory-results #resultCount {
+    margin-bottom: 30px;
+    color: #5f666b;
+    font-size: 1rem;
+}
+
+.directory-results #noResults {
+    margin-top: 25px;
+    color: #5f666b;
 }
