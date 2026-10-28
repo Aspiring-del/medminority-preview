@@ -230,5 +230,20 @@ document.addEventListener("DOMContentLoaded", function () {
             displayDoctors(doctors);
         });
 
-    displayDoctors(doctors);
+    const params = new URLSearchParams(window.location.search);
+    const nameParam = params.get("name") || "";
+    const specialtyParam = params.get("specialty") || "";
+    const cityParam = params.get("city") || "";
+    const ethnicityParam = params.get("ethnicity") || "";
+
+    document.getElementById("searchName").value = nameParam;
+    document.getElementById("specialty").value = specialtyParam;
+    document.getElementById("city").value = cityParam;
+    document.getElementById("ethnicity").value = ethnicityParam;
+
+    if (nameParam || specialtyParam || cityParam || ethnicityParam) {
+        searchDoctors();
+    } else {
+        displayDoctors(doctors);
+    }
 });
