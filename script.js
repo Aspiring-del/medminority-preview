@@ -1,4 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // TEMPORARY: profiles in this list stay in the repository but are not public.
+    const hiddenProviderPages = new Set([
+        "provider-adamolekun.html",
+        "provider-aikman.html",
+        "provider-akpan.html",
+        "provider-alexis.html",
+        "provider-anderson.html",
+        "provider-asagbra.html",
+        "provider-atkinson.html",
+        "provider-ayako.html",
+        "provider-beng-ongey.html",
+        "provider-biritwum.html",
+        "provider-booker.html",
+        "provider-guillory-johnson.html",
+        "provider-ofosu.html",
+        "provider-ray.html",
+        "provider-riddley.html"
+    ]);
+
+    const currentPage = window.location.pathname.split("/").pop();
+
+    if (hiddenProviderPages.has(currentPage)) {
+        window.location.replace("find.html");
+        return;
+    }
     document.querySelectorAll("[data-coming-soon]").forEach(function (element) {
         element.addEventListener("click", function (event) {
             event.preventDefault();
@@ -143,6 +168,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     ];
 
+    // Only profiles not listed above are rendered in the public directory.
+    const publicDoctors = doctors.filter(
+        doctor => !hiddenProviderPages.has(doctor.profile)
+    );
+
     const searchForm = document.getElementById("doctorSearchForm");
     const doctorGrid = document.getElementById("doctorGrid");
     const resultCount = document.getElementById("resultCount");
@@ -206,7 +236,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const city = document.getElementById("city").value;
         const ethnicity = document.getElementById("ethnicity").value;
 
-        const results = doctors.filter(doctor => {
+        const results = publicDoctors.filter(doctor => {
             const matchesName =
                 doctor.name.toLowerCase().includes(name);
 
@@ -244,7 +274,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("resetSearch")
         .addEventListener("click", function () {
             searchForm.reset();
-            displayDoctors(doctors);
+            displayDoctors(publicDoctors);
         });
 
     const params = new URLSearchParams(window.location.search);
@@ -261,6 +291,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (nameParam || specialtyParam || cityParam || ethnicityParam) {
         searchDoctors();
     } else {
-        displayDoctors(doctors);
+        displayDoctors(publicDoctors);
     }
 });
