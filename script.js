@@ -315,6 +315,216 @@ document.addEventListener("DOMContentLoaded", function () {
             ethnicity: "",
             practice: "MUSC Health Florence Medical Center",
             profile: "provider-pdmpa-gbigbi-jackson.html"
+        },
+        {
+            id: 31,
+            name: "Don K. Dawson, DMD",
+            specialty: "Dentistry",
+            city: "Not listed",
+            state: "SC",
+            ethnicity: "",
+            practice: "Not listed in the directory",
+            profile: "provider-pdmpa-dawson.html"
+        },
+        {
+            id: 32,
+            name: "Veronica D. Mathis, DMD",
+            specialty: "Dentistry",
+            city: "Dillon",
+            state: "SC",
+            ethnicity: "",
+            practice: "Comprehensive Dental Center",
+            profile: "provider-pdmpa-mathis.html"
+        },
+        {
+            id: 33,
+            name: "Jachelle A.G. Sprattling, DMD",
+            specialty: "Dentistry / Dental Implant Placement and Restoration",
+            city: "Latta",
+            state: "SC",
+            ethnicity: "",
+            practice: "Latta Family Dentistry",
+            profile: "provider-pdmpa-jachelle-sprattling.html"
+        },
+        {
+            id: 34,
+            name: "Kareem Sprattling, DMD",
+            specialty: "Dentistry / Cosmetic Dentistry",
+            city: "Latta",
+            state: "SC",
+            ethnicity: "",
+            practice: "Latta Family Dentistry",
+            profile: "provider-pdmpa-kareem-sprattling.html"
+        },
+        {
+            id: 35,
+            name: "LaVanda Martin, FNP-BC",
+            specialty: "Family Nurse Practitioner / Primary Care",
+            city: "Florence",
+            state: "SC",
+            ethnicity: "",
+            practice: "Revived Medical Community Clinic",
+            profile: "provider-pdmpa-martin.html"
+        },
+        {
+            id: 36,
+            name: "Mary Mitchell, BSN, MSN, APRN, FNP-BC",
+            specialty: "Family Nurse Practitioner",
+            city: "Florence",
+            state: "SC",
+            ethnicity: "",
+            practice: "HopeHealth, Inc.",
+            profile: "provider-pdmpa-mitchell.html"
+        },
+        {
+            id: 37,
+            name: "Linda Wilds, FNP",
+            specialty: "Family Nurse Practitioner",
+            city: "Marion",
+            state: "SC",
+            ethnicity: "",
+            practice: "Health Care Partners of South Carolina",
+            profile: "provider-pdmpa-wilds.html"
+        },
+        {
+            id: 38,
+            name: "Selina F. White, DNP, APRN, AGNP-C",
+            specialty: "Geriatric Nurse Practitioner / Hospice and Palliative Care",
+            city: "Florence",
+            state: "SC",
+            ethnicity: "",
+            practice: "Life Savior Palliative Care / Life Savior In Home Patient Care",
+            profile: "provider-pdmpa-white.html"
+        },
+        {
+            id: 39,
+            name: "Michelle L. Brooks, OD",
+            specialty: "Optometry",
+            city: "Florence",
+            state: "SC",
+            ethnicity: "",
+            practice: "Eyes Over Florence",
+            profile: "provider-pdmpa-brooks.html"
+        },
+        {
+            id: 40,
+            name: "Aaron Haire, DPM",
+            specialty: "Podiatry / Foot and Ankle Surgery",
+            city: "Florence / Hartsville",
+            state: "SC",
+            ethnicity: "",
+            practice: "Physicians Footcare",
+            profile: "provider-pdmpa-haire.html"
+        },
+        {
+            id: 41,
+            name: "Hillery Dolford, DNP, FNP-C, WCC, DWC",
+            specialty: "Family Nurse Practitioner / Diabetes Wound and Foot Care",
+            city: "Florence",
+            state: "SC",
+            ethnicity: "",
+            practice: "Sweet Feet Diabetic Foot Spa",
+            profile: "provider-pdmpa-dolford.html"
+        },
+        {
+            id: 42,
+            name: "Kevin L. Ray, DPM, JD",
+            specialty: "Podiatry / Foot and Ankle Surgery",
+            city: "Florence / Hartsville",
+            state: "SC",
+            ethnicity: "",
+            practice: "Physicians Footcare",
+            profile: "provider-pdmpa-kevin-ray.html"
+        },
+        {
+            id: 43,
+            name: "Alexis Sanders, Ph.D.",
+            specialty: "Licensed Clinical Psychology",
+            city: "Florence",
+            state: "SC",
+            ethnicity: "",
+            practice: "Bask Psychological Services, LLC",
+            profile: "provider-pdmpa-sanders.html"
+        },
+        {
+            id: 44,
+            name: "Carol S. Wright, Ed.D.",
+            specialty: "Clinical Social Work",
+            city: "Florence / Lake City",
+            state: "SC",
+            ethnicity: "",
+            practice: "CW Counseling & Consulting, LLC",
+            profile: "provider-pdmpa-wright.html"
+        },
+        {
+            id: 45,
+            name: "Sharon L. Black, Ph.D.",
+            specialty: "Behavioral Health / Licensed Independent Social Work",
+            city: "Florence",
+            state: "SC",
+            ethnicity: "",
+            practice: "HopeHealth, Inc.",
+            profile: "provider-pdmpa-black.html"
+        },
+        {
+            id: 46,
+            name: "Natalie C. Brown-Kelly, M.Ed., M.A., CCC-SLP",
+            specialty: "Speech-Language Pathology",
+            city: "Florence",
+            state: "SC",
+            ethnicity: "",
+            practice: "Clark Speech Language Therapy Service, LLC",
+            profile: "provider-pdmpa-brown-kelly.html"
+        },
+        {
+            id: 47,
+            name: "E. Lorraine Holmes, M.A., CCC-SLP",
+            specialty: "Speech-Language Pathology",
+            city: "Kingstree / Lake City",
+            state: "SC",
+            ethnicity: "",
+            practice: "Williamsburg Speech Services, LLC",
+            profile: "provider-pdmpa-holmes.html"
+        },
+        {
+            id: 48,
+            name: "Jennifer Evans, DC",
+            specialty: "Chiropractic Medicine / Physiotherapy",
+            city: "Florence",
+            state: "SC",
+            ethnicity: "",
+            practice: "Eastern Carolina Medicine",
+            profile: "provider-pdmpa-evans.html"
+        },
+        {
+            id: 49,
+            name: "David A. Gittens, DC",
+            specialty: "Chiropractic Medicine",
+            city: "Florence / Irmo",
+            state: "SC",
+            ethnicity: "",
+            practice: "Gittens Health and Wellness",
+            profile: "provider-pdmpa-gittens.html"
+        },
+        {
+            id: 50,
+            name: "Donya D. Wallace, Ph.D., NCC, LPCS",
+            specialty: "Licensed Professional Counseling",
+            city: "Lake City / Kingstree",
+            state: "SC",
+            ethnicity: "",
+            practice: "Prime Care of the Lower Pee Dee",
+            profile: "provider-pdmpa-donya-wallace.html"
+        },
+        {
+            id: 51,
+            name: "Tyrone Wallace, DC",
+            specialty: "Chiropractic Medicine / Therapeutic Modalities",
+            city: "Lake City / Kingstree",
+            state: "SC",
+            ethnicity: "",
+            practice: "Prime Care of the Lower Pee Dee",
+            profile: "provider-pdmpa-tyrone-wallace.html"
         }
     ];
 
@@ -335,7 +545,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function displayDoctors(list) {
         doctorGrid.replaceChildren();
 
-        resultCount.textContent = `${list.length} doctor(s) found`;
+        resultCount.textContent = `${list.length} provider(s) found`;
 
         noResults.style.display =
             list.length === 0 ? "block" : "none";
@@ -390,11 +600,13 @@ document.addEventListener("DOMContentLoaded", function () {
             const matchesName =
                 doctor.name.toLowerCase().includes(name);
 
+            const specialtyParts = doctor.specialty.split(" / ").map(value => value.trim());
             const matchesSpecialty =
-                !specialty || doctor.specialty === specialty;
+                !specialty || doctor.specialty === specialty || specialtyParts.includes(specialty);
 
+            const cityParts = doctor.city.split(" / ").map(value => value.trim());
             const matchesCity =
-                !city || doctor.city === city;
+                !city || doctor.city === city || cityParts.includes(city);
 
             const matchesEthnicity =
                 !ethnicity || doctor.ethnicity === ethnicity;
