@@ -62,7 +62,7 @@
             <div class="page-hero-overlay"></div>
 
             <div class="page-hero-content">
-                <h1>North Carolina Physician Directory</h1>
+                <h1>North and South Carolina Provider Directory</h1>
 
                 <p>
                     The directory is being built through voluntary provider
@@ -99,17 +99,17 @@
 
         <section class="search doctor-search">
 
-            <h1>Find a Doctor</h1>
+            <h1>Find a Healthcare Provider</h1>
         
-            <p>Search by name, specialty, city or ethnicity.</p>
+            <p>Search by name, specialty or city.</p>
         
             <form class="filter-bar doctor-filter-bar" id="doctorSearchForm">
         
                 <input
                     type="search"
                     id="searchName"
-                    placeholder="Search doctor's name"
-                    aria-label="Doctor's name"
+                    placeholder="Search provider's name"
+                    aria-label="Provider's name"
                 >
         
                 <select id="specialty">
@@ -134,6 +134,17 @@
                     <option value="Orthopaedic Spine Surgery">Orthopaedic Spine Surgery</option>
                     <option value="Hospital Medicine">Hospital Medicine</option>
                     <option value="Family Medicine / Primary Care">Family Medicine / Primary Care</option>
+                    <option value="Dentistry">Dentistry</option>
+                    <option value="Family Nurse Practitioner">Family Nurse Practitioner</option>
+                    <option value="Geriatric Nurse Practitioner">Geriatric Nurse Practitioner</option>
+                    <option value="Optometry">Optometry</option>
+                    <option value="Podiatry">Podiatry</option>
+                    <option value="Licensed Clinical Psychology">Licensed Clinical Psychology</option>
+                    <option value="Clinical Social Work">Clinical Social Work</option>
+                    <option value="Behavioral Health">Behavioral Health</option>
+                    <option value="Speech-Language Pathology">Speech-Language Pathology</option>
+                    <option value="Chiropractic Medicine">Chiropractic Medicine</option>
+                    <option value="Licensed Professional Counseling">Licensed Professional Counseling</option>
                 </select>
         
                 <select id="city">
@@ -150,6 +161,11 @@
                     <option value="Mullins">Mullins</option>
                     <option value="Timmonsville">Timmonsville</option>
                     <option value="Hartsville">Hartsville</option>
+                    <option value="Dillon">Dillon</option>
+                    <option value="Latta">Latta</option>
+                    <option value="Marion">Marion</option>
+                    <option value="Kingstree">Kingstree</option>
+                    <option value="Irmo">Irmo</option>
                 </select>
         
                 <select id="ethnicity">
@@ -170,7 +186,7 @@
 
         <section class="directory-results">
         
-            <h2>Doctor Directory</h2>
+            <h2>Provider Directory</h2>
         
             <p id="resultCount" role="status" aria-live="polite"></p>
         
@@ -179,7 +195,7 @@
             </div>
         
             <p id="noResults" style="display:none;">
-                No doctors match your search.
+                No providers match your search.
                 Try changing your filters.
             </p>
         
