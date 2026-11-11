@@ -15,7 +15,22 @@ document.addEventListener("DOMContentLoaded", function () {
         "provider-guillory-johnson.html",
         "provider-ofosu.html",
         "provider-ray.html",
-        "provider-riddley.html"
+        "provider-riddley.html",
+        "provider-pdmpa-myers.html",
+        "provider-pdmpa-angus.html",
+        "provider-pdmpa-brown.html",
+        "provider-pdmpa-campbell.html",
+        "provider-pdmpa-hicks.html",
+        "provider-pdmpa-jackson-dozier.html",
+        "provider-pdmpa-mbangowah.html",
+        "provider-pdmpa-thompson.html",
+        "provider-pdmpa-pinckney.html",
+        "provider-pdmpa-robinson.html",
+        "provider-pdmpa-suffrant.html",
+        "provider-pdmpa-alan.html",
+        "provider-pdmpa-mills.html",
+        "provider-pdmpa-abraham.html",
+        "provider-pdmpa-gbigbi-jackson.html"
     ]);
 
     const currentPage = window.location.pathname.split("/").pop();
@@ -165,6 +180,156 @@ document.addEventListener("DOMContentLoaded", function () {
             ethnicity: "",
             practice: "FirstHealth",
             profile: "provider-ray.html"
+        },
+        {
+            id: 16,
+            name: "Jocelyn A. Myers",
+            specialty: "Endocrinology",
+            city: "Myrtle Beach",
+            state: "SC",
+            ethnicity: "",
+            practice: "Carolina Health Specialists",
+            profile: "provider-pdmpa-myers.html"
+        },
+        {
+            id: 17,
+            name: "Joslyn L. Angus Jr.",
+            specialty: "Family Medicine",
+            city: "Florence",
+            state: "SC",
+            ethnicity: "",
+            practice: "Jeter-Skinner Family Practice",
+            profile: "provider-pdmpa-angus.html"
+        },
+        {
+            id: 18,
+            name: "Morris E. Brown III",
+            specialty: "Family Medicine",
+            city: "Lake City",
+            state: "SC",
+            ethnicity: "",
+            practice: "Lake City Family Medicine",
+            profile: "provider-pdmpa-brown.html"
+        },
+        {
+            id: 19,
+            name: "Treadwell Campbell",
+            specialty: "Family Medicine",
+            city: "Mullins",
+            state: "SC",
+            ethnicity: "",
+            practice: "Campbell Family Practice",
+            profile: "provider-pdmpa-campbell.html"
+        },
+        {
+            id: 20,
+            name: "Loretta Hicks",
+            specialty: "Family Medicine",
+            city: "Florence",
+            state: "SC",
+            ethnicity: "",
+            practice: "Florence CBOC / Columbia VA Healthcare System",
+            profile: "provider-pdmpa-hicks.html"
+        },
+        {
+            id: 21,
+            name: "Focell Jackson-Dozier",
+            specialty: "Family Medicine",
+            city: "Timmonsville",
+            state: "SC",
+            ethnicity: "",
+            practice: "McLeod Family Practice",
+            profile: "provider-pdmpa-jackson-dozier.html"
+        },
+        {
+            id: 22,
+            name: "Yvette Mbangowah",
+            specialty: "Family Medicine / Obesity Medicine",
+            city: "Florence",
+            state: "SC",
+            ethnicity: "",
+            practice: "Jeter Skinner Family Practice",
+            profile: "provider-pdmpa-mbangowah.html"
+        },
+        {
+            id: 23,
+            name: "Chelsea N. Thompson",
+            specialty: "Family Medicine",
+            city: "Mullins",
+            state: "SC",
+            ethnicity: "",
+            practice: "McLeod Family Medicine Marion",
+            profile: "provider-pdmpa-thompson.html"
+        },
+        {
+            id: 24,
+            name: "Ashekia F. Pinckney",
+            specialty: "Obstetrics & Gynecology",
+            city: "Hartsville",
+            state: "SC",
+            ethnicity: "",
+            practice: "Women's Care of Hartsville",
+            profile: "provider-pdmpa-pinckney.html"
+        },
+        {
+            id: 25,
+            name: "Leroy F. Robinson",
+            specialty: "Obstetrics & Gynecology",
+            city: "Hartsville",
+            state: "SC",
+            ethnicity: "",
+            practice: "Women's Care of Hartsville",
+            profile: "provider-pdmpa-robinson.html"
+        },
+        {
+            id: 26,
+            name: "Germina Suffrant",
+            specialty: "Obstetrics & Gynecology",
+            city: "Florence",
+            state: "SC",
+            ethnicity: "",
+            practice: "MUSC OB/GYN Florence",
+            profile: "provider-pdmpa-suffrant.html"
+        },
+        {
+            id: 27,
+            name: "Rodney K. Alan",
+            specialty: "Orthopaedic Surgery",
+            city: "Florence",
+            state: "SC",
+            ethnicity: "",
+            practice: "McLeod Orthopaedics",
+            profile: "provider-pdmpa-alan.html"
+        },
+        {
+            id: 28,
+            name: "Michael V. Mills",
+            specialty: "Orthopaedic Spine Surgery",
+            city: "Hartsville",
+            state: "SC",
+            ethnicity: "",
+            practice: "Carolina Pines Regional Medical Center",
+            profile: "provider-pdmpa-mills.html"
+        },
+        {
+            id: 29,
+            name: "Sheron Abraham",
+            specialty: "Hospital Medicine",
+            city: "Florence",
+            state: "SC",
+            ethnicity: "",
+            practice: "MUSC Health Florence Division",
+            profile: "provider-pdmpa-abraham.html"
+        },
+        {
+            id: 30,
+            name: "Grace Gbigbi-Jackson",
+            specialty: "Family Medicine / Primary Care",
+            city: "Florence",
+            state: "SC",
+            ethnicity: "",
+            practice: "MUSC Health Florence Medical Center",
+            profile: "provider-pdmpa-gbigbi-jackson.html"
         }
     ];
 
@@ -220,7 +385,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const city = document.createElement("p");
             city.className = "doctor-location";
-            city.textContent = `${doctor.city}, NC`;
+            city.textContent = `${doctor.city}, ${doctor.state || "NC"}`;
 
             cardContent.append(name, specialty, practice, city);
             card.append(photoPlaceholder, cardContent);
