@@ -15,22 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "provider-guillory-johnson.html",
         "provider-ofosu.html",
         "provider-ray.html",
-        "provider-riddley.html",
-        "provider-pdmpa-myers.html",
-        "provider-pdmpa-angus.html",
-        "provider-pdmpa-brown.html",
-        "provider-pdmpa-campbell.html",
-        "provider-pdmpa-hicks.html",
-        "provider-pdmpa-jackson-dozier.html",
-        "provider-pdmpa-mbangowah.html",
-        "provider-pdmpa-thompson.html",
-        "provider-pdmpa-pinckney.html",
-        "provider-pdmpa-robinson.html",
-        "provider-pdmpa-suffrant.html",
-        "provider-pdmpa-alan.html",
-        "provider-pdmpa-mills.html",
-        "provider-pdmpa-abraham.html",
-        "provider-pdmpa-gbigbi-jackson.html"
+        "provider-riddley.html"
     ]);
 
     const currentPage = window.location.pathname.split("/").pop();
