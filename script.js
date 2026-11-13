@@ -1,22 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // TEMPORARY: profiles in this list stay in the repository but are not public.
-    const hiddenProviderPages = new Set([
-        "provider-adamolekun.html",
-        "provider-aikman.html",
-        "provider-akpan.html",
-        "provider-alexis.html",
-        "provider-anderson.html",
-        "provider-asagbra.html",
-        "provider-atkinson.html",
-        "provider-ayako.html",
-        "provider-beng-ongey.html",
-        "provider-biritwum.html",
-        "provider-booker.html",
-        "provider-guillory-johnson.html",
-        "provider-ofosu.html",
-        "provider-ray.html",
-        "provider-riddley.html"
-    ]);
+    // All listed provider profiles have permission to be public.
+    const hiddenProviderPages = new Set();
 
     const currentPage = window.location.pathname.split("/").pop();
 
